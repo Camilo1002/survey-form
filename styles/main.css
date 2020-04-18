@@ -61,7 +61,7 @@ select{
     
     border: solid 2px green;
     outline: none;
-    width: 100%;
+    width: 90%;
   }
 .radio-y-checkbox{
    
@@ -94,9 +94,11 @@ select{
   
   }
 
-  button{
+  #submit{
       border: 1px solid;
       border-radius: 6px ;
+      width: 80%;
+      margin: 20px;
   }
 
   #line {
