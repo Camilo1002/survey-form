@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title id="title">Movilidad en Medellin</title>
+    <meta charset="UTF-8">
+    <link href="styles/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <main>
+        <div id="description" class="">
+            <h1>Movilidad en Medellin</h1>
+            <p>En este pequeño formulario queremos indagar sobre cual es la forma en la que mas se mueven los habitantes
+                de
+                la capital Antioqueña.</p>
+        </div>
+        <form id="survey-form">
+            <div class="div-formulario">
+                <label class="font" id="name-label" for="nombre">Nombre Completo:</label>
+                <input type="text" name="nombre" class="inputs focus width" id="name" placeholder="Ingrese su nombre"
+                    required>
+            </div>
+            <div class="div-formulario">
+                <label class="font" id="email-label" for="email">Correo Electronico:</label>
+                <input type="email" name="email" class="inputs focus width" id="email"
+                    placeholder="Ingrese su correo electronico" required>
+            </div>
+            <div class="div-formulario">
+                <label class="font" id="number-label" for="edad">Edad:</label>
+                <input type="number" name="edad" class="inputs focus width" id="number" min="16" max="110"
+                    placeholder="Edad" required>
+            </div>
+            <div class="div-formulario">
+                <label class="font">¿Que medio de transporte usa usted?</label>
+                <select id="dropown" name="desplegable" required class="inputs focus ">
+                    <option disabled selected value>Seleccione medio de transporte</option>
+                    <option value="metro">Metro (y sus sistemas integrados)</option>
+                    <option value="bus">Bus</option>
+                    <option value="taxi">Taxi</option>
+                    <option value="carro">Carro</option>
+                    <option value="moto">Moto</option>
+                    <option value="bici">Bicicleta</option>
+                    <option value="caminar">Caminar</option>
+                    <option value="plataformas">Plataformas digitales (uber, inDriver, etc)</option>
+                </select>
+            </div>
+            <div class="div-formulario">
+                <label class="font" id="vehiculo-propio">¿Cuenta con vehiculo propio?</label>
+                <label for="v-propio">
+                    <input type="radio" name="v-propio" class="radio-y-checkbox " id="si" required>
+                    Si</label>
+                <label for="v-propio">
+                    <input type="radio" name="v-propio" id="no" class="radio-y-checkbox " required>
+                    No</label>
+            </div>
+            <div class="div-formulario">
+                <label class="font">Utiliza los medios anteriores para movilisarse a:</label>
+                <label>
+                    <input type="checkbox" class="radio-y-checkbox " id="estudio" name="lugar-estudio">Lugar de estudio
+                </label>
+                <label>
+                    <input type="checkbox" class="radio-y-checkbox " id="trabajo" name="lugar-trabajo">Lugar de trabajo
+                </label>
+                <label>
+                    <input type="checkbox" class="radio-y-checkbox " id="amigos" name="r-amigos">Reunirse con
+                    amigos</label>
+                <label>
+                    <input type="checkbox" class="radio-y-checkbox " id="otro" name="otra">Otra
+                </label>
+            </div>
+            <div class="div-formulario">
+                <label class="font">Dejanos algunas sugerencias para mejorar la movilidad en Medellin</label>
+            </div>
+            <div class="div-formulario">
+                <textarea id="sugerencias" class="inputs focus width" name="sugiere"
+                    placeholder="Ingrese una sugerencia"></textarea>
+            </div>
+            <div class="div-formulario"></div>
+            <button type="submit" id="submit" class="inputs focus">
+                Enviar
+            </button>
+        </form>
+        
+    
+        </form>
+    </main>
+</body>
+
+</html>
